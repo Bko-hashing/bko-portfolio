@@ -99,7 +99,7 @@ const Meteor = ({ src, direction }) => {
 };
 
 export default function Home() {
-  const [stars, setStars] = useState([]);
+  const [stars, setStars] = useState<{ x: string; y: string; delay: number; hue: number; }[]>([]);
   const [showWelcome, setShowWelcome] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
 
@@ -152,7 +152,7 @@ export default function Home() {
           >
             <div className="text-6xl font-bold space-y-2">
               <div>Welcome to</div>
-              <div>Bernard's</div>
+              <div>Bernard&apos;s</div>
               <div>Website</div>
               <div>(As Of Jan. 2025)</div>
             </div>
