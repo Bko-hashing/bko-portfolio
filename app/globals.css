@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; filter: brightness(1.3); }
+  50% { opacity: 0.3; filter: brightness(0.7); }
+}
+
+@keyframes hueRotate {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.star {
+  animation: twinkle 3s infinite, hueRotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes meteorRight {
+  from { transform: translate(-10vw, -10vh) rotate(45deg); }
+  to { transform: translate(110vw, 110vh) rotate(45deg); }
+}
+@keyframes meteorLeft {
+  from { transform: translate(110vw, -10vh) rotate(-45deg); }
+  to { transform: translate(-10vw, 110vh) rotate(-45deg); }
+}
+.meteor-right {
+  animation: meteorRight linear infinite;
+}
+.meteor-left {
+  animation: meteorLeft linear infinite;
+}
