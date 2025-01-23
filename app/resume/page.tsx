@@ -22,7 +22,7 @@ export default function Resume() {
         </a>
         <div className="w-full max-w-4xl h-[calc(100vh-250px)] overflow-hidden">
           <iframe 
-            src="/Bernard_Ko_Resume2025.pdf" 
+            src="https://bko-hashing.github.io/bko-portfolio/Bernard_Ko_Resume2025.pdf" 
             className="w-full h-full"
             style={{ border: 'none' }}
           />
