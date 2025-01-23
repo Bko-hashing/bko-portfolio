@@ -137,7 +137,7 @@ export default function Home() {
         ))}
       </svg>
 
-      <Meteor src="https://bko-hashing.github.io/bko-portfolio/meteor.webpp" direction="right" />
+      <Meteor src="https://bko-hashing.github.io/bko-portfolio/meteor.webp" direction="right" />
       <Meteor src="https://bko-hashing.github.io/bko-portfolio/meteor2.webp" direction="left" />
 
       <Rocket onComplete={handleAnimationComplete} />
