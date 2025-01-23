@@ -38,7 +38,7 @@ const Rocket = ({ onComplete }) => {
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
           >
             <Image 
-              src="/fat-man.png"
+              src="https://bko-hashing.github.io/bko-portfolio/fat-man.png"
               alt="Rocket" 
               width={100} 
               height={200} 
@@ -57,7 +57,7 @@ const Rocket = ({ onComplete }) => {
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           >
             <Image 
-              src="/giphy.webp"
+              src="https://bko-hashing.github.io/bko-portfolio/giphy.webp"
               alt="Explosion" 
               width={200} 
               height={200} 
@@ -137,8 +137,8 @@ export default function Home() {
         ))}
       </svg>
 
-      <Meteor src="/meteor.webp" direction="right" />
-      <Meteor src="/meteor2.webp" direction="left" />
+      <Meteor src="https://bko-hashing.github.io/bko-portfolio/meteor.webpp" direction="right" />
+      <Meteor src="https://bko-hashing.github.io/bko-portfolio/meteor2.webp" direction="left" />
 
       <Rocket onComplete={handleAnimationComplete} />
 

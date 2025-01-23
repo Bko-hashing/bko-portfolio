@@ -72,7 +72,7 @@ const Background: React.FC = () => {
 
   // Array of car logo URLs (replace with your actual logo paths)
   const rock = [
-    'alienrock.png'
+    'https://bko-hashing.github.io/bko-portfolio/alienrock.png'
   ];
 
   // Utility function to get random positions on screen edges (left, right, top, bottom)
