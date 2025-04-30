@@ -154,7 +154,7 @@ export default function Home() {
               <div>Welcome to</div>
               <div>Bernard&apos;s</div>
               <div>Website</div>
-              <div>(As Of Jan. 2025)</div>
+              
             </div>
           </motion.div>
         )}
