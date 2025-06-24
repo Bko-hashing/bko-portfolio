@@ -8,7 +8,7 @@ const projects = [
   {
     name: "BuyTheDip!",
     description: "Empowers traders and investors with key technical, seasonal, dividend, and growth data.",
-    image: "/bullmarket.png",
+    image: "https://github.com/Bko-hashing/bko-portfolio/blob/main/public/bullmarket.png",
     demo: "#",
     github: "https://github.com/bko-hashing/buythedip",
     tech: ["TypeScript,", "Next.js", "Node.js","NestJS","JavaScript", "React","PostgreSQL","Finance","Trading/Investing"],
@@ -16,7 +16,7 @@ const projects = [
   {
     name: "WealthLadder",
     description: "A financial educational tool designed to guide individuals towards financial freedom through debt management and investment strategies",
-    image: "/avgogirl.png",
+    image: "https://github.com/Bko-hashing/bko-portfolio/blob/main/public/avgogirl.png",
     demo: "#",
     github: "https://github.com/QuocHHDo/wealthladder",
     tech: ["TypeScript,", "Next.js", "JavaScript", "React", "Educational", "Finance"],
@@ -24,7 +24,7 @@ const projects = [
   {
     name: "Project 3",
     description: "Not yet created, stay tuned!",
-    image: "/working.svg",
+    image: "https://github.com/Bko-hashing/bko-portfolio/blob/main/public/working.svg",
     demo: "#",
     github: "#",
     tech: ["Coming Soon"],

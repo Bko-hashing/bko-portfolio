@@ -72,7 +72,7 @@ export default function About() {
             </ul>
           </div>
           <div className="md:w-1/3 w-full flex justify-center mt-8 md:mt-0">
-            <Image src="/personalheadpic.png" alt="Bernard Ko" width={350} height={350} className="rounded-full object-cover border-4 border-blue-300" />
+            <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/personalheadpic.png" alt="Bernard Ko" width={350} height={350} className="rounded-full object-cover border-4 border-blue-300" />
           </div>
         </section>
         {/* Education Section */}
@@ -82,7 +82,7 @@ export default function About() {
             {/* Baruch College */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
-                <Image src="/ccny.png" alt="CCNY" width={120} height={120} className="rounded-full" />
+                <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/ccny.png" alt="CCNY" width={120} height={120} className="rounded-full" />
               </div>
               <div className="md:w-4/5 w-full md:pl-8">
                 <h3 className="text-3xl font-bold">The City College of New York</h3>
@@ -137,7 +137,7 @@ export default function About() {
             {/* HBK Engineering, LLC. */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
-                <Image src="/hbklogo.png" alt="HBK Engineering" width={240} height={240} className="rounded-full" />
+                <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/hbklogo.png" alt="HBK Engineering" width={240} height={240} className="rounded-full" />
               </div>
               <div className="md:w-4/5 w-full md:pl-8">
                 <h3 className="text-3xl font-bold text-blue-900 mb-2">HBK Engineerinng, LLC.</h3>
@@ -156,7 +156,7 @@ export default function About() {
             {/* Meter Engineer Intern */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
-                <Image src="/nypalogo.jpg" alt="New York Power Authority" width={240} height={240} className="rounded-full" />
+                <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/nypalogo.jpg" alt="New York Power Authority" width={240} height={240} className="rounded-full" />
               </div>
               <div className="md:w-4/5 w-full md:pl-8">
                 <h3 className="text-3xl font-bold text-blue-600 mb-2">New York Power Authority</h3>
@@ -173,7 +173,7 @@ export default function About() {
             {/* Research Assistant  */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
-                <Image src="/ccny.png" alt="The City College of New York" width={120} height={120} className="rounded-full" />
+                <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/ccny.png" alt="The City College of New York" width={120} height={120} className="rounded-full" />
               </div>
               <div className="md:w-4/5 w-full md:pl-8">
                 <h3 className="text-3xl font-bold text-purple-500 mb-2">The City College of New York</h3>

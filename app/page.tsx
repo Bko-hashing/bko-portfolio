@@ -47,7 +47,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center justify-center min-h-[70vh] w-full px-4 md:px-16 py-12">
         <div className="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
           <video width="420" height="320" className="object-contain rounded-lg shadow-lg" autoPlay loop muted playsInline>
-            <source src="/codingvidlogo.mp4" type="video/mp4" />
+            <source src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/codingvidlogo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -68,13 +68,13 @@ export default function Home() {
         <div className="text-2xl font-semibold mb-4">About Me</div>
         <div className="flex flex-row space-x-6 mb-6">
           <a href="https://github.com/bko-hashing" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <Image src="/github.svg" alt="GitHub" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+            <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/github.svg" alt="GitHub" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
           </a>
           <a href="mailto:bernardko1203@gmail.com" aria-label="Email">
-            <Image src="/email.svg" alt="Email" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+            <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/email.svg" alt="Email" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
           </a>
           <a href="https://linkedin.com/in/bernardko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <Image src="/linkedin.svg" alt="LinkedIn" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+            <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/linkedin.svg" alt="LinkedIn" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
           </a>
         </div>
         <div className="text-lg mb-6">Interested in me?</div>
@@ -89,21 +89,21 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-8 w-full justify-center mb-8">
           {/* BuyTheDip Project */}
           <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
-            <Image src="/bullmarket.png" alt="BuyTheDip Logo" width={180} height={180} className="rounded-full mb-4" />
+            <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/bullmarket.png" alt="BuyTheDip Logo" width={180} height={180} className="rounded-full mb-4" />
             <div className="text-2xl font-semibold mb-2">BuyTheDip</div>
             <div className="text-gray-600 mb-4">A stock market sentiment and analysis platform.</div>
             <div className="flex gap-4">
-              <Link href="/projects/buythedip" className="text-blue-600 hover:underline">View Demo</Link>
+              <Link href="/buythedip" className="text-blue-600 hover:underline">View Demo</Link>
               <Link href="https://github.com/bko-hashing/buythedip" className="text-blue-600 hover:underline" target="_blank">View GitHub</Link>
             </div>
           </div>
           {/* WealthLadder Project */}
           <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
-            <Image src="/avgogirl.png" alt="WealthLadder Logo" width={180} height={180} className="rounded-full mb-4" />
+            <Image src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public//avgogirl.png" alt="WealthLadder Logo" width={180} height={180} className="rounded-full mb-4" />
             <div className="text-2xl font-semibold mb-2">WealthLadder</div>
             <div className="text-gray-600 mb-4">A financial educational tool designed to guide individuals towards financial freedom.</div>
             <div className="flex gap-4">
-              <Link href="/projects/wealthladder" className="text-blue-600 hover:underline">View Demo</Link>
+              <Link href="/wealthladder" className="text-blue-600 hover:underline">View Demo</Link>
               <Link href="https://github.com/QuocHHDo/wealthladder" className="text-blue-600 hover:underline" target="_blank">View GitHub</Link>
             </div>
           </div>

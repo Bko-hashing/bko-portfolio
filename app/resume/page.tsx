@@ -12,7 +12,7 @@ export default function Resume() {
           Here&apos;s my full resume. You can view it directly on this page or download it for offline viewing.
         </p>
         <a 
-          href="/BernardKoResume_2025.pdf" 
+          href="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/BernardKoResume_2025.pdf" 
           download 
           className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-400 transition-colors duration-300 mb-6"
         >
@@ -20,7 +20,7 @@ export default function Resume() {
         </a>
         <div className="w-full max-w-5xl flex-1">
           <iframe 
-            src="/BernardKoResume_2025.pdf" 
+            src="https://github.com/Bko-hashing/bko-portfolio/blob/main/public/BernardKoResume_2025.pdf" 
             className="w-full h-screen" 
             style={{ 
               top: 0,
