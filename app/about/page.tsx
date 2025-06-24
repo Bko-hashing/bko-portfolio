@@ -15,7 +15,7 @@ export default function About() {
         loop: false,
         delay: 15,
       })
-        .typeString(`Hello! I'm Bernard Ko, an aspiring software engineer with entry level experience in Python & Basic knowledge in React, TypeScript & JavaScript.<br/><br/>I love to challenge myself and learn new technologies.<br/><br/>When I'm not coding, you can find me working on my projects like this website or researching the stock market.<br/><br/>I'm known these quotes by my peers:<br/><br/>&quot;📈 BUY THE TOP SELL THE DIP 📉&quot;<br/><br/> 🤷🏻‍♂️&quot;When in doubt 🤷🏻‍♂️, be in doubt 🤷🏻‍♂️!!! Don't question it!! 🤷🏻‍♂️&quot;`)
+        .typeString(`Hello! I&apos;m Bernard Ko, an aspiring software engineer with entry level experience in Python & Basic knowledge in React, TypeScript & JavaScript.<br/><br/>I love to challenge myself and learn new technologies.<br/><br/>When I&apos;m not coding, you can find me working on my projects like this website or researching the stock market.<br/><br/>I&apos;m known these quotes by my peers:<br/><br/>&quot;📈 BUY THE TOP SELL THE DIP 📉&quot;<br/><br/> 🤷🏻‍♂️&quot;When in doubt 🤷🏻‍♂️, be in doubt 🤷🏻‍♂️!!! Don&apos;t question it!! 🤷🏻‍♂️&quot;`)
         .start();
     }
   }, []);
@@ -54,7 +54,7 @@ export default function About() {
             </p>
             <p className="text-lg text-black mb-4">
               The first programming language I learned was Python and I used it to develop an algorithm for my final project in college. 
-              My experience also includes full-stack web development, in which I've worked with several frontend frameworks like React, and I've utilized relational databases 
+              My experience also includes full-stack web development, in which I&apos;ve worked with several frontend frameworks like React, and I&apos;ve utilized relational databases 
               like PostgreSQL in the backend. 
               Currently, I am still trying to further develop my skills in the MERN stack. 
               My skills also include JavaScript, TypeScript, and C/C++.
@@ -144,10 +144,10 @@ export default function About() {
                 <div className="text-lg mb-1">Electrical Engineer I</div>
                 <div className="text-gray-600 mb-1">July 2019 - August 2019</div>
                 <ul className="list-disc ml-8">
-                  <li>Managed PECO's assets for efficient material orders, lowering material orders and cost by 50%.</li>
+                  <li>Managed PECO&apos;s assets for efficient material orders, lowering material orders and cost by 50%.</li>
                   <li>Drafted project proposals that minimize cost & labor by as much as 30%, outbid our competitors and increased
                   profit by 30%</li>
-                  <li>Lead PECO's pole replacement program, trained & managed six designers to efficiently design replacements,
+                  <li>Lead PECO&apos;s pole replacement program, trained & managed six designers to efficiently design replacements,
                   saving 40% in time for each pole replacement.</li>
                   <li>Designed utility line upgrades and facility replacement for five counties in Pennsylvania to match the growing energy demands.</li>
                 </ul>
@@ -163,10 +163,10 @@ export default function About() {
                 <div className="text-lg mb-1">Meter Engineer Intern</div>
                 <div className="text-gray-600 mb-1">June 2022 - December 2022</div>
                 <ul className="list-disc ml-8">
-                  <li>Engineered potential and current transformer replacements for NYPA's 69/115kV substations.</li>
+                  <li>Engineered potential and current transformer replacements for NYPA&apos;s 69/115kV substations.</li>
                   <li>Drafted 1 & 3-line technical drawings and schematics using AutoCAD.</li>
-                  <li>Designed & supported meter installation and instrument upgrades for NYPA's facilities and municipalities.</li>
-                  <li>Calibrated & tested revenue/genitor control meters for NYPA's substations to meet ANSI & IEEE standards.</li>
+                  <li>Designed & supported meter installation and instrument upgrades for NYPA&apos;s facilities and municipalities.</li>
+                  <li>Calibrated & tested revenue/genitor control meters for NYPA&apos;s substations to meet ANSI & IEEE standards.</li>
                 </ul>
               </div>
             </div>

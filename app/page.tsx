@@ -68,13 +68,13 @@ export default function Home() {
         <div className="text-2xl font-semibold mb-4">About Me</div>
         <div className="flex flex-row space-x-6 mb-6">
           <a href="https://github.com/bko-hashing" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <img src="/github.svg" alt="GitHub" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+            <Image src="/github.svg" alt="GitHub" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
           </a>
           <a href="mailto:bernardko1203@gmail.com" aria-label="Email">
-            <img src="/email.svg" alt="Email" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+            <Image src="/email.svg" alt="Email" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
           </a>
           <a href="https://linkedin.com/in/bernardko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <img src="/linkedin.svg" alt="LinkedIn" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+            <Image src="/linkedin.svg" alt="LinkedIn" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
           </a>
         </div>
         <div className="text-lg mb-6">Interested in me?</div>
