@@ -1,5 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 export const metadata: Metadata = {
   title: 'My Portfolio',
@@ -13,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.19.0/dist/core.js"></script>
+      </head>
+      <body className="bg-gray-50">
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }

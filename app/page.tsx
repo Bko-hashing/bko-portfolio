@@ -1,192 +1,120 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import Typewriter from 'typewriter-effect/dist/core';
 
-const Rocket = ({ onComplete }) => {
-  const [showRocket, setShowRocket] = useState(true);
-  const [showExplosion, setShowExplosion] = useState(false);
-
-  useEffect(() => {
-    const rocketTimer = setTimeout(() => {
-      setShowRocket(false);
-      setShowExplosion(true);
-    }, 4000); // 4 seconds for rocket animation
-
-    const explosionTimer = setTimeout(() => {
-      setShowExplosion(false);
-      onComplete();
-    }, 8000); // 4 seconds for rocket + 4 seconds for explosion
-
-    return () => {
-      clearTimeout(rocketTimer);
-      clearTimeout(explosionTimer);
-    };
-  }, [onComplete]);
-
-  return (
-    <>
-      <AnimatePresence>
-        {showRocket && (
-          <motion.div
-            initial={{ y: "100%", x: "-50%" }}
-            animate={{ y: "-250%", x: "-50%" }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 4, ease: "easeInOut" }}
-            className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-          >
-            <Image 
-              src="https://bko-hashing.github.io/bko-portfolio/fat-man.png"
-              alt="Rocket" 
-              width={100} 
-              height={200} 
-              className="object-contain"
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <AnimatePresence>
-        {showExplosion && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <Image 
-              src="https://bko-hashing.github.io/bko-portfolio/giphy.webp"
-              alt="Explosion" 
-              width={200} 
-              height={200} 
-              className="object-contain"
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
-  );
-};
-
-const Meteor = ({ src, direction }) => {
-  const [position, setPosition] = useState({ top: Math.random() * 100, left: direction === 'right' ? -10 : 110 });
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPosition({
-        top: Math.random() * 100,
-        left: direction === 'right' ? -10 : 110
-      });
-    }, (Math.random() * 5000) + 5000); // Random interval between 5-10 seconds
-
-    return () => clearInterval(interval);
-  }, [direction]);
-
-  return (
-    <div 
-      className={`absolute ${direction === 'right' ? 'meteor-right' : 'meteor-left'}`}
-      style={{ 
-        top: `${position.top}%`, 
-        left: `${position.left}%`,
-        animationDuration: `${Math.random() * 2 + 3}s` // Random duration between 3-5 seconds
-      }}
-    >
-      <Image src={src} alt="Meteor" width={50} height={50} className="object-contain" />
-    </div>
-  );
-};
 
 export default function Home() {
-  const [stars, setStars] = useState<{ x: string; y: string; delay: number; hue: number; }[]>([]);
-  const [showWelcome, setShowWelcome] = useState(false);
-  const [showLinks, setShowLinks] = useState(false);
+  const topTypewriterRef = useRef(null);
+  const bottomTypewriterRef = useRef(null);
+  const [showBottomTypewriter, setShowBottomTypewriter] = useState(false);
 
   useEffect(() => {
-    const newStars = Array.from({ length: 500 }, () => ({
-      x: `${Math.random() * 100}vw`,
-      y: `${Math.random() * 100}vh`,
-      delay: Math.random() * 5, 
-      hue: Math.random() * 360, 
-    }));
-    setStars(newStars);
+    if (Typewriter) {
+      // Top typewriter
+      new Typewriter(topTypewriterRef.current, {
+        loop: false,
+        delay: 35,
+      })
+        .typeString('Hi there, My name is Bernard. Welcome to my website.')
+        .callFunction(() => setShowBottomTypewriter(true))
+        .start();
+    }
   }, []);
 
-  const handleAnimationComplete = () => {
-    setShowWelcome(true);
-    setTimeout(() => setShowLinks(true), 1000);
-  };
+  useEffect(() => {
+    if (showBottomTypewriter && Typewriter) {
+      new Typewriter(bottomTypewriterRef.current, {
+        loop: true,
+        delay: 50,
+        deleteSpeed: 30,
+      })
+        .typeString(' stock trader.')
+        .pauseFor(1200)
+        .deleteAll()
+        .typeString(' aspiring software engineer.')
+        .pauseFor(1200)
+        .deleteAll()
+        .start();
+    }
+  }, [showBottomTypewriter]);
 
   return (
-    <div className="h-screen w-full overflow-hidden relative bg-black">
-      <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
-        <rect width="100%" height="100%" fill="black" />
-        {stars.map((star, index) => (
-          <circle 
-            key={index} 
-            cx={star.x} 
-            cy={star.y} 
-            r="1.5" 
-            className="star" 
-            style={{ 
-              animationDelay: `${star.delay}s`,
-              fill: `hsl(${star.hue}, 100%, 70%)`
-            }}
-          />
-        ))}
-      </svg>
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      {/* Hero Section */}
+      <section className="flex flex-col md:flex-row items-center justify-center min-h-[70vh] w-full px-4 md:px-16 py-12">
+        <div className="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
+          <video width="420" height="320" className="object-contain rounded-lg shadow-lg" autoPlay loop muted playsInline>
+            <source src="/codingvidlogo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className="md:w-1/2 w-full flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="text-6xl font-bold mb-6 min-h-[4rem]">Welcome!</div>
+          <div ref={topTypewriterRef} className="text-xl mb-4 min-h-[2.5rem] block" />
+          <div className="flex items-center gap-2">
+            <span className="text-2xl font-medium min-h-[2.5rem]">I am a(n)</span>
+            {showBottomTypewriter && (
+              <div ref={bottomTypewriterRef} className="text-2xl font-medium min-h-[2.5rem]" />
+            )}
+          </div>
+        </div>
+      </section>
 
-      <Meteor src="https://bko-hashing.github.io/bko-portfolio/meteor.webp" direction="right" />
-      <Meteor src="https://bko-hashing.github.io/bko-portfolio/meteor2.webp" direction="left" />
-
-      <Rocket onComplete={handleAnimationComplete} />
-
-      <AnimatePresence>
-        {showWelcome && (
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1/2 text-white text-center"
-          >
-            <div className="text-6xl font-bold space-y-2">
-              <div>Welcome to</div>
-              <div>Bernard&apos;s</div>
-              <div>Website</div>
-              
+      {/* About Me Section (unchanged) */}
+      <section className="flex flex-col items-center bg-blue-100 py-16 rounded-lg mx-2 md:mx-32 shadow-lg">
+        <div className="text-2xl font-semibold mb-4">About Me</div>
+        <div className="flex flex-row space-x-6 mb-6">
+          <a href="https://github.com/bko-hashing" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="/github.svg" alt="GitHub" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+          </a>
+          <a href="mailto:bernardko1203@gmail.com" aria-label="Email">
+            <img src="/email.svg" alt="Email" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+          </a>
+          <a href="https://linkedin.com/in/bernardko" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="/linkedin.svg" alt="LinkedIn" className="w-10 h-10 rounded-full border-2 border-blue-700 hover:scale-110 transition" />
+          </a>
+        </div>
+        <div className="text-lg mb-6">Interested in me?</div>
+        <Link href="/about">
+          <button className="bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700 transition">Learn More</button>
+        </Link>
+      </section>
+      
+      {/* Projects Section */}
+      <section className="w-full max-w-6xl mx-auto py-16 flex flex-col items-center">
+        <h2 className="text-4xl font-bold mb-10">My Recent Projects</h2>
+        <div className="flex flex-col md:flex-row gap-8 w-full justify-center mb-8">
+          {/* BuyTheDip Project */}
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
+            <Image src="/bullmarket.png" alt="BuyTheDip Logo" width={180} height={180} className="rounded-full mb-4" />
+            <div className="text-2xl font-semibold mb-2">BuyTheDip</div>
+            <div className="text-gray-600 mb-4">A stock market sentiment and analysis platform.</div>
+            <div className="flex gap-4">
+              <Link href="/projects/buythedip" className="text-blue-600 hover:underline">View Demo</Link>
+              <Link href="https://github.com/bko-hashing/buythedip" className="text-blue-600 hover:underline" target="_blank">View GitHub</Link>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <AnimatePresence>
-        {showLinks && (
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, staggerChildren: 0.1 }}
-            className="absolute right-1/4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4"
-          >
-            {['Projects', 'About', 'Resume', 'Contact'].map((item) => (
-              <motion.div
-                key={item}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-              >
-                <Link 
-                  href={`/${item.toLowerCase()}`}
-                  className="text-white hover:text-blue-300 transition-colors duration-300 text-xl font-semibold"
-                >
-                  {item}
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-
+          </div>
+          {/* WealthLadder Project */}
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
+            <Image src="/avgogirl.png" alt="WealthLadder Logo" width={180} height={180} className="rounded-full mb-4" />
+            <div className="text-2xl font-semibold mb-2">WealthLadder</div>
+            <div className="text-gray-600 mb-4">A financial educational tool designed to guide individuals towards financial freedom.</div>
+            <div className="flex gap-4">
+              <Link href="/projects/wealthladder" className="text-blue-600 hover:underline">View Demo</Link>
+              <Link href="https://github.com/QuocHHDo/wealthladder" className="text-blue-600 hover:underline" target="_blank">View GitHub</Link>
+            </div>
+          </div>
+          
+        </div>
+        <Link href="/projects">
+          <button className="bg-blue-600 text-white px-8 py-3 rounded shadow hover:bg-blue-700 transition text-lg">View More</button>
+        </Link>
+      </section>
     </div>
   );
 }
+
+// Add TypewriterJS v2 to _document or via CDN in layout for this to work.
