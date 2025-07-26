@@ -105,7 +105,7 @@ export default function Home() {
             />
           </a>
           <a
-            href="https://linkedin.com/in/bernardko"
+            href="www.linkedin.com/in/bernardko03"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
