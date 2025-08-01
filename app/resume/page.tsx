@@ -9,7 +9,7 @@ export default function Resume() {
       <div className="relative z-10 min-h-screen w-full text-black p-4 sm:p-8 flex flex-col items-center justify-start">
         <h1 className="text-4xl font-bold mb-4">My Resume</h1>
         <p className="mb-4 max-w-2xl text-center">
-          Here's my full resume. You can view it directly on this page or download it for offline viewing.
+          Here&apos;s my full resume. You can view it directly on this page or download it for offline viewing.
         </p>
 
 
