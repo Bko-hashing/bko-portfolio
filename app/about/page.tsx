@@ -319,7 +319,7 @@ export default function About() {
 
         <section className="w-full max-w-6xl mx-auto mb-16">
           <h2 className="text-4xl font-bold mb-4 border-b-2 border-blue-400 w-fit">
-            Certifications
+            Certifications & Licenses
           </h2>
           <div className="space-y-8 mt-8">
             {/* FE Exam */}
