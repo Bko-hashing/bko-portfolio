@@ -371,7 +371,42 @@ export default function About() {
           </h2>
 
           <div className="space-y-8 mt-8">
-            {/* CFOA Exam */}
+            {/* SIE Exam */}
+            <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
+              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
+                <Image
+                src = "./finra.jpg"
+                  //src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/main/public/finra.jpg"
+                  alt="SIE Logo"
+                  width={240}
+                  height={240}
+                  className="rounded"
+                />
+              </div>
+              <div className="md:w-4/5 w-full md:pl-8">
+                <h3 className="text-2xl font-bold">
+                  Securities Industry Essentials (SIE)
+                </h3>
+                {/* <div className="text-lg mb-1 text-gray-700">
+                  Certification ID:{" "}
+                  <span className="text-black">Pending</span>
+                </div> */}
+                <div className="text-gray-600 mb-2">Pending</div>
+                {/* <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold underline hover:text-blue-800"
+                >
+                  VERIFY
+                </a> */}
+              </div>
+            </div>
+          </div>
+
+
+          <div className="space-y-8 mt-8">
+            {/* CFOA Cert */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
                 <Image
