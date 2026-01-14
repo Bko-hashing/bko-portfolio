@@ -371,7 +371,7 @@ export default function About() {
           </h2>
 
           <div className="space-y-8 mt-8">
-            {/* FE Exam */}
+            {/* CFOA Exam */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
                 <Image
