@@ -360,7 +360,7 @@ export default function About() {
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
                 <Image
                 src = "./icfd.png"
-                  src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/main/public/icfd.png"
+                  //src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/main/public/icfd.png"
                   alt="CFOA Logo"
                   width={120}
                   height={120}
