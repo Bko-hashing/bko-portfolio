@@ -354,6 +354,39 @@ export default function About() {
               </div>
             </div>
           </div>
+          <div className="space-y-8 mt-8">
+            {/* FE Exam */}
+            <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
+              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
+                <Image
+                src = "./icfd.png"
+                  src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/main/public/icfd.png"
+                  alt="CFOA Logo"
+                  width={120}
+                  height={120}
+                  className="rounded"
+                />
+              </div>
+              <div className="md:w-4/5 w-full md:pl-8">
+                <h3 className="text-2xl font-bold">
+                  FE Electrical and Computer
+                </h3>
+                <div className="text-lg mb-1 text-gray-700">
+                  Certification ID:{" "}
+                  <span className="text-black">25550ff1-e076-4322-b5cefd49868d48e3</span>
+                </div>
+                <div className="text-gray-600 mb-2">Active</div>
+                <a
+                  href="https://credsverse.com/credentials/25550ff1-e076-4322-b5ce-fd49868d48e3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold underline hover:text-blue-800"
+                >
+                  VERIFY
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>

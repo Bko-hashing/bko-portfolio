@@ -22,12 +22,12 @@ const projects = [
     tech: ["TypeScript", "Next.js", "JavaScript", "React", "Educational", "Finance"],
   },
   {
-    name: "Project 3",
-    description: "Not yet created, stay tuned!",
-    image: "https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/working.svg",
-    demo: "#",
-    github: "#",
-    tech: ["Coming Soon"],
+    name: "CFOA Practice Exam",
+    description: "A financial educational website aimed to help users prepare for the Certified Financial Operations Analyst (CFOA) exam with practice questions and resources.",
+    image: "https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/vite.svg",
+    demo: "https://bko-hashing.github.io/cfoapractice/",
+    github: "https://github.com/bko-hashing/buythedip",
+    tech: ["TypeScript", "React", "Educational", "Finance"],
   },
 ];
 

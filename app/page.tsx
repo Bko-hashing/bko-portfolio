@@ -187,6 +187,37 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          {/* CFOA Practice Exam Project */}
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
+            <Image
+              src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/icfdt.png"
+              alt="CFOA Logo"
+              width={180}
+              height={180}
+              className="rounded-full mb-4"
+            />
+            <div className="text-2xl font-semibold mb-2">WealthLadder</div>
+            <div className="text-gray-600 mb-4">
+              A financial educational website to help users prepare for the 
+              Certified Financial Operations Analyst (CFOA) exam.
+            </div>
+            <div className="flex gap-4">
+              <Link
+                href="https://bko-hashing.github.io/cfoapractice/"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                View Demo
+              </Link>
+              <Link
+                href="https://github.com/bko-hashing/cfoapractice"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                View GitHub
+              </Link>
+            </div>
+          </div>
         </div>
         <Link href="/projects">
           <button className="bg-blue-600 text-white px-8 py-3 rounded shadow hover:bg-blue-700 transition text-lg">
@@ -197,5 +228,3 @@ export default function Home() {
     </div>
   );
 }
-
-// Add TypewriterJS v2 to _document or via CDN in layout for this to work.
