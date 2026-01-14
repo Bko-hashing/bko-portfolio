@@ -189,6 +189,8 @@ export default function Home() {
           </div>
           {/* CFOA Practice Exam Project */}
           <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
+          <br></br>
+          <br></br>
             <Image
               src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/icfdt.png"
               alt="CFOA Logo"
@@ -196,6 +198,7 @@ export default function Home() {
               height={180}
               className="rounded-full mb-4"
             />
+            <br></br>
             <div className="text-2xl font-semibold mb-2">WealthLadder</div>
             <div className="text-gray-600 mb-4">
               A financial educational website to help users prepare for the 

@@ -117,7 +117,54 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-4 border-b-2 border-blue-400 w-fit">
             Education
           </h2>
+
+
           <div className="space-y-8 mt-8">
+
+            {/* Trend-Up */}
+            <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
+              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
+                <Image
+                  src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/trendup.jpg"
+                  alt="TrendUp"
+                  width={120}
+                  height={120}
+                  className="rounded-full"
+                />
+              </div>
+              <div className="md:w-4/5 w-full md:pl-8">
+                <h3 className="text-3xl font-bold">
+                  TrendUp
+                </h3>
+                <div className="text-lg mb-1">
+                  Certificate in Derivatives Strategy & Risk Management 
+                </div>
+                <div className="text-gray-600 mb-1">
+                  September 2025-December 2025
+                </div>
+                <div className="text-gray-700">Relevant Courses:</div>
+                <ul className="list-disc ml-8">
+                  <li>
+                    Intro to financial markets (L1) 
+                  </li>
+                  <li>
+                    Intro to options markets (L2)
+                  </li>
+                  <li> 
+                    Intro to futures markets (L3)
+                  </li>
+                </ul>
+                <div className="text-gray-700">Achievements</div>
+                <ul className="list-disc ml-8">
+                  <li>
+                    Ranked top 3 in the CME futures trading competition
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+        
+
             {/* CCNY College */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
               <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
@@ -152,38 +199,9 @@ export default function About() {
                 </ul>
               </div>
             </div>
-            {/* CodePath */}
-            {/* <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
-              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
-                <Image src="/codepath.png" alt="CodePath" width={120} height={120} className="rounded-full" />
-              </div>
-              <div className="md:w-4/5 w-full md:pl-8">
-                <h3 className="text-3xl font-bold">Codepath</h3>
-                <div className="text-lg mb-1">September 2024-November 2024</div>
-                <div className="text-gray-700">Relevant Courses:</div>
-                <ul className="list-disc ml-8">
-                  <li>Intermediate Technical Interview Prep</li>
-                  <li>Advanced Web Development</li>
-                </ul>
-              </div>
-            </div> */}
-            {/* Penn State */}
-            {/* <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
-              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
-                <Image src="/psu.png" alt="Pennsylvania State University" width={120} height={120} className="rounded-full" />
-              </div>
-              <div className="md:w-4/5 w-full md:pl-8">
-                <h3 className="text-3xl font-bold">Pennsylvania State University</h3>
-                <div className="text-lg mb-1">Bachelor of Science in Data Science, Minor in Information Sciences and Technology</div>
-                <div className="text-gray-600 mb-1">August 2019-May 2023</div>
-                <div className="text-gray-700">Relevant Courses:</div>
-                <ul className="list-disc ml-8">
-                  <li>Data Structures and Algorithms</li>
-                  <li>Database Management Systems</li>
-                  <li>Cloud Computing</li>
-                </ul>
-              </div>
-            </div> */}
+
+
+            
           </div>
         </section>
         {/* Work Experience Section */}
@@ -209,27 +227,20 @@ export default function About() {
                 </h3>
                 <div className="text-lg mb-1">Electrical Engineer I</div>
                 <div className="text-gray-600 mb-1">
-                  July 2019 - August 2019
+                  February 2023 - Present
                 </div>
                 <ul className="list-disc ml-8">
                   <li>
-                    Managed PECO&apos;s assets for efficient material orders,
-                    lowering material orders and cost by 50%.
+                    Managed PECO&apos;s assets for efficient material orders, reduced material procurement costs by around 35% to 50% through improved asset tracking and order optimization
                   </li>
                   <li>
-                    Drafted project proposals that minimize cost & labor by as
-                    much as 30%, outbid our competitors and increased profit by
-                    30%
+                    Drafted project proposals that minimize cost & labor by as much as 30%, contributed to winning competitive bids by optimizing cost and labor estimates, improving project profitability
                   </li>
                   <li>
-                    Lead PECO&apos;s pole replacement program, trained & managed
-                    six designers to efficiently design replacements, saving 40%
-                    in time for each pole replacement.
+                    Lead PECO&apos;s pole replacement program, trained & managed six designers to efficiently design replacements, saving 40% in time for each pole replacement
                   </li>
                   <li>
-                    Designed utility line upgrades and facility replacement for
-                    five counties in Pennsylvania to match the growing energy
-                    demands.
+                    Designed utility line upgrades and facility replacement for five counties in Pennsylvania to match the growing energy demands
                   </li>
                 </ul>
               </div>
@@ -256,19 +267,19 @@ export default function About() {
                 <ul className="list-disc ml-8">
                   <li>
                     Engineered potential and current transformer replacements
-                    for NYPA&apos;s 69/115kV substations.
+                    for NYPA&apos;s 69/115kV substations
                   </li>
                   <li>
                     Drafted 1 & 3-line technical drawings and schematics using
-                    AutoCAD.
+                    AutoCAD
                   </li>
                   <li>
                     Designed & supported meter installation and instrument
-                    upgrades for NYPA&apos;s facilities and municipalities.
+                    upgrades for NYPA&apos;s facilities and municipalities
                   </li>
                   <li>
                     Calibrated & tested revenue/genitor control meters for
-                    NYPA&apos;s substations to meet ANSI & IEEE standards.
+                    NYPA&apos;s substations to meet ANSI & IEEE standards
                   </li>
                 </ul>
               </div>
@@ -314,6 +325,43 @@ export default function About() {
                 </ul>
               </div>
             </div>
+            {/* Self Employment. */}
+            <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
+              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
+                <Image
+                  src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/stockmarket.png"
+                  alt="Self Employed"
+                  width={240}
+                  height={240}
+                  className="rounded-full"
+                />
+              </div>
+              <div className="md:w-4/5 w-full md:pl-8">
+                <h3 className="text-3xl font-bold text-blue-900 mb-2">
+                  Self-Employed
+                </h3>
+                <div className="text-lg mb-1">Independent Stock Trader</div>
+                <div className="text-gray-600 mb-1">
+                  November 2020- Present
+                </div>
+                <ul className="list-disc ml-8">
+                  <li>
+                    Manage a stock trading portfolio, focusing on equity and options 
+                  </li>
+                  <li>
+                    Perform extensive market research and tracked economic trends by leveraging financial news aggregators and technical indicators
+                  </li>
+                  <li>
+                  	Developed and executed equity and options strategies using technical indicators and macroeconomic analysis, with consistent risk management and performance tracking
+                  </li>
+                  <li>
+                    Create a watchlist of stocks by leveraging stock screeners and financial tools to improve trade selection
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/*cut here*/}
           </div>
         </section>
 
@@ -321,6 +369,42 @@ export default function About() {
           <h2 className="text-4xl font-bold mb-4 border-b-2 border-blue-400 w-fit">
             Certifications & Licenses
           </h2>
+
+          <div className="space-y-8 mt-8">
+            {/* FE Exam */}
+            <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
+              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
+                <Image
+                src = "./icfdt.png"
+                  //src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/main/public/icfdt.png"
+                  alt="CFOA Logo"
+                  width={240}
+                  height={240}
+                  className="rounded"
+                />
+              </div>
+              <div className="md:w-4/5 w-full md:pl-8">
+                <h3 className="text-2xl font-bold">
+                  Certified Futures and Options Analyst (CFOA)
+                </h3>
+                <div className="text-lg mb-1 text-gray-700">
+                  Certification ID:{" "}
+                  <span className="text-black">25550ff1-e076-4322-b5cefd49868d48e3</span>
+                </div>
+                <div className="text-gray-600 mb-2">Active</div>
+                <a
+                  href="https://credsverse.com/credentials/25550ff1-e076-4322-b5ce-fd49868d48e3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold underline hover:text-blue-800"
+                >
+                  VERIFY
+                </a>
+              </div>
+            </div>
+          </div>
+
+
           <div className="space-y-8 mt-8">
             {/* FE Exam */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
@@ -354,39 +438,8 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="space-y-8 mt-8">
-            {/* FE Exam */}
-            <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
-              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
-                <Image
-                src = "./icfd.png"
-                  //src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/main/public/icfd.png"
-                  alt="CFOA Logo"
-                  width={120}
-                  height={120}
-                  className="rounded"
-                />
-              </div>
-              <div className="md:w-4/5 w-full md:pl-8">
-                <h3 className="text-2xl font-bold">
-                  FE Electrical and Computer
-                </h3>
-                <div className="text-lg mb-1 text-gray-700">
-                  Certification ID:{" "}
-                  <span className="text-black">25550ff1-e076-4322-b5cefd49868d48e3</span>
-                </div>
-                <div className="text-gray-600 mb-2">Active</div>
-                <a
-                  href="https://credsverse.com/credentials/25550ff1-e076-4322-b5ce-fd49868d48e3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 font-semibold underline hover:text-blue-800"
-                >
-                  VERIFY
-                </a>
-              </div>
-            </div>
-          </div>
+          
+
         </section>
       </div>
     </div>
