@@ -109,7 +109,7 @@ export default function About() {
                 applications
               </li>
               <li>
-                Utimately, developed a systematic, algorithm-ready trading model with consistent profitability
+                Utimately, develop a systematic, algorithm-ready trading model with consistent profitability
               </li>
               
             </ul>
@@ -254,7 +254,7 @@ export default function About() {
                   </li>
                   
                 </ul>
-
+                    <br></br>
                 <div className="text-lg mb-1">Electrical Engineer I</div>
                 <div className="text-gray-600 mb-1">
                   February 2023 - December 2025
