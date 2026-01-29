@@ -198,7 +198,7 @@ export default function Home() {
               className="rounded-full mb-4"
             />
              <br></br> 
-            <div className="text-2xl font-semibold mb-2">WealthLadder</div>
+            <div className="text-2xl font-semibold mb-2">CFOA Practice Exam</div>
             <div className="text-gray-600 mb-4">
               A financial educational website to help users prepare for the 
               Certified Financial Operations Analyst (CFOA) exam.

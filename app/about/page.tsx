@@ -16,12 +16,22 @@ export default function About() {
         delay: 15,
       })
         .typeString(
-          `Hello! I&apos;m Bernard Ko, an aspiring software engineer with entry level experience in Python & Basic knowledge in React, TypeScript & JavaScript.<br/><br/>I love to challenge myself and learn new technologies.<br/><br/>When I&apos;m not coding, you can find me working on my projects like this website or researching the stock market.<br/><br/>I&apos;m known these quotes by my peers:<br/><br/>&quot;📈 BUY THE TOP SELL THE DIP 📉&quot;<br/><br/> 🤷🏻‍♂️&quot;When in doubt 🤷🏻‍♂️, be in doubt 🤷🏻‍♂️!!! Don&apos;t question it!! 🤷🏻‍♂️&quot;`
+          `Hello! I&apos;m Bernard Ko, an aspiring software engineer with entry level experience in Python & Basic knowledge in React, TypeScript & JavaScript.
+          <br/><br/>
+          I love to challenge myself and learn new technologies.
+          <br/><br/>
+          When I&apos;m not coding, you can find me working on my projects like this website or researching the stock market.
+          <br/><br/>
+          I&apos;m known these quotes by my peers:
+          <br/><br/>
+          🤷🏻‍♂️&quot;When in doubt 🤷🏻‍♂️, be in doubt 🤷🏻‍♂️`
         )
         .start();
     }
   }, []);
-
+          //&quot;📈 BUY THE TOP SELL THE DIP 📉&quot;
+          //<br/><br/> 
+          //!!! Don&apos;t question it!! 🤷🏻‍♂️&quot;
   const handleLearnMore = () => {
     summaryRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -70,18 +80,15 @@ export default function About() {
             <p className="text-lg text-black mb-4">
               I graduated from The City College of New York with a Bachelor of
               Engineering in Electrical Engineering and minor in Mathematics. I
-              am currently seeking Entry Level Software Engineering positions
-              and working towards AZ-900 Certifications.
+              am currently aiming to become a Quant Developer.
             </p>
             <p className="text-lg text-black mb-4">
               The first programming language I learned was Python and I used it
               to develop an algorithm for my final project in college. My
               experience also includes full-stack web development, in which
-              I&apos;ve worked with several frontend frameworks like React, and
+              I&apos;ve worked with several frontend frameworks like React and Vue, and
               I&apos;ve utilized relational databases like PostgreSQL in the
-              backend. Currently, I am still trying to further develop my skills
-              in the MERN stack. My skills also include JavaScript, TypeScript,
-              and C/C++.
+              backend. 
             </p>
             <p className="text-lg text-black mb-4">
               Besides coding, I love to trade stocks and practice programming
@@ -94,12 +101,17 @@ export default function About() {
             </p>
             <p className="text-lg text-black mb-2">Currently, I am:</p>
             <ul className="list-disc ml-8 text-black mb-4">
+              <li>Looking to break into the finance field.</li>
               <li>Developing new features for my web applications</li>
+              <li>Fine-tuning strategies to increase edge and consistency</li>
               <li>
                 Maintaining and improving the existing source code for these
                 applications
               </li>
-              <li>Looking for an entry-level software engineering position.</li>
+              <li>
+                Utimately, developed a systematic, algorithm-ready trading model with consistent profitability
+              </li>
+              
             </ul>
           </div>
           <div className="md:w-1/3 w-full flex justify-center mt-8 md:mt-0">
@@ -225,9 +237,27 @@ export default function About() {
                 <h3 className="text-3xl font-bold text-blue-900 mb-2">
                   HBK Engineerinng, LLC.
                 </h3>
+
+                <div className="text-lg mb-1">Electrical Engineer II</div>
+                <div className="text-gray-600 mb-1">
+                  January 2026 - Present
+                </div>
+                <ul className="list-disc ml-8">
+                  <li>
+                    Analyzed voltage utilization data using Power BI dashboards to monitor transformer and pad-mounted equipment performance, identifying critical assets requiring upgrade or replacement
+                  </li>
+                  <li>
+                    Led early-stage project design efforts by conducting client site walkdowns and developing project proposals, including scope of work, material estimates, and labor cost breakdowns
+                  </li>
+                  <li>
+                    	Collaborated with engineering, field crews, and stakeholders to validate asset data, align upgrade priorities, and ensure feasibility of proposed projects
+                  </li>
+                  
+                </ul>
+
                 <div className="text-lg mb-1">Electrical Engineer I</div>
                 <div className="text-gray-600 mb-1">
-                  February 2023 - Present
+                  February 2023 - December 2025
                 </div>
                 <ul className="list-disc ml-8">
                   <li>
