@@ -308,7 +308,7 @@ export default function About() {
                     upgrades for NYPA&apos;s facilities and municipalities
                   </li>
                   <li>
-                    Calibrated & tested revenue/genitor control meters for
+                    Calibrated & tested revenue/generator control meters for
                     NYPA&apos;s substations to meet ANSI & IEEE standards
                   </li>
                 </ul>
