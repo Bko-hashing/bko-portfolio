@@ -400,6 +400,43 @@ export default function About() {
             Certifications & Licenses
           </h2>
 
+
+          <div className="space-y-8 mt-8">
+            {/* AZ-900 Exam (Microsoft Certified: Azure Fundamentals)*/}
+            <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
+              <div className="md:w-1/5 w-full flex justify-center mb-4 md:mb-0">
+                <Image
+                src = "./az900.png"
+                  //src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/main/public/az900.png"
+                  alt="AZ-900 Logo"
+                  width={120}
+                  height={120}
+                  className="rounded"
+                />
+              </div>
+              <div className="md:w-4/5 w-full md:pl-8">
+                <h3 className="text-2xl font-bold">
+                  Microsoft Certified: Azure Fundamentals (AZ-900)
+                </h3>
+                {/* <div className="text-lg mb-1 text-gray-700">
+                  Certification ID:{" "}
+                  <span className="text-black">Pending</span>
+                </div> */}
+                <div className="text-gray-600 mb-2">Pending</div>
+                {/* <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-semibold underline hover:text-blue-800"
+                >
+                  VERIFY
+                </a> */}
+              </div>
+            </div>
+          </div>
+
+
+
           <div className="space-y-8 mt-8">
             {/* SIE Exam */}
             <div className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow p-6">
