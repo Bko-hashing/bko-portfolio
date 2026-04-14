@@ -101,7 +101,7 @@ export default function About() {
             </p>
             <p className="text-lg text-black mb-2">Currently, I am:</p>
             <ul className="list-disc ml-8 text-black mb-4">
-              <li>Looking to break into the finance field.</li>
+              <li>Looking to break into the SWE field.</li>
               <li>Developing new features for my web applications</li>
               <li>Fine-tuning strategies to increase edge and consistency</li>
               <li>
