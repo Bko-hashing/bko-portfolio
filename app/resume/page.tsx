@@ -24,7 +24,7 @@ export default function Resume() {
 
         <div className="w-full max-w-5xl flex-1">
           <iframe 
-            src="./BernardKoResume_2025.pdf" 
+            src="./BernardKoResumeRunning2026swe.pdf" 
             className="w-full" 
             style={{ 
               width: '100%',
