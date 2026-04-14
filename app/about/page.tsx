@@ -80,7 +80,7 @@ export default function About() {
             <p className="text-lg text-black mb-4">
               I graduated from The City College of New York with a Bachelor of
               Engineering in Electrical Engineering and minor in Mathematics. I
-              am currently aiming to become a Quant Developer.
+              am currently aiming to become a software engineer.
             </p>
             <p className="text-lg text-black mb-4">
               The first programming language I learned was Python and I used it
