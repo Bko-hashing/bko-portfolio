@@ -130,9 +130,9 @@ export default function Home() {
       {/* Projects Section */}
       <section className="w-full max-w-6xl mx-auto py-16 flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-10">My Recent Projects</h2>
-        <div className="flex flex-col md:flex-row gap-8 w-full justify-center mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mb-8">
           {/* BuyTheDip Project */}
-          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
             <Image
               src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/bullmarket.png"
               alt="BuyTheDip Logo"
@@ -158,7 +158,7 @@ export default function Home() {
             </div>
           </div>
           {/* WealthLadder Project */}
-          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
             <Image
               src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/avgogirl.png"
               alt="WealthLadder Logo"
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
           </div>
           {/* CFOA Practice Exam Project */}
-          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center w-full md:w-1/3">
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
              <br></br><br></br> 
             <Image
               src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/icfdt.png"
@@ -213,6 +213,38 @@ export default function Home() {
               </Link>
               <Link
                 href="https://github.com/bko-hashing/cfoapractice"
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                View GitHub
+              </Link>
+            </div>
+          </div>
+          {/* Trading Algorithm Project */}
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+             <br></br><br></br> 
+            <Image
+              src="https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/trade.png"
+              alt="Trading Algorithm Logo"
+              width={180}
+              height={180}
+              className="rounded-full mb-4"
+            />
+             <br></br> 
+            <div className="text-2xl font-semibold mb-2">Trading Algorithm</div>
+            <div className="text-gray-600 mb-4">
+              An automated options trading bot using the Interactive Brokers API.
+            </div>
+            <div className="flex gap-4">
+              <Link
+                href=""
+                className="text-blue-600 hover:underline"
+                target="_blank"
+              >
+                View Demo
+              </Link>
+              <Link
+                href=""
                 className="text-blue-600 hover:underline"
                 target="_blank"
               >

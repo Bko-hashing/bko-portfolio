@@ -29,6 +29,14 @@ const projects = [
     github: "https://github.com/bko-hashing/buythedip",
     tech: ["TypeScript", "React", "Educational", "Finance"],
   },
+  {
+    name: "Trading Algorithm",
+    description: "An automated options trading bot using the Interactive Brokers API.(Sorry this repo is set to private for now, but feel free to reach out if you're interested in learning more about it!)",
+    image: "https://raw.githubusercontent.com/Bko-hashing/bko-portfolio/refs/heads/main/public/trade.png",
+    demo: "",
+    github: "https://github.com/bko-hashing",
+    tech: ["Python", "Finance", "Trading Algorithms"],
+  },
 ];
 
 export default function ProjectsPage() {

@@ -244,13 +244,19 @@ export default function About() {
                 </div>
                 <ul className="list-disc ml-8">
                   <li>
-                    Analyzed voltage utilization data using Power BI dashboards to monitor transformer and pad-mounted equipment performance, identifying critical assets requiring upgrade or replacement
+                    Built and maintained Power BI dashboards and data models to analyze grid asset performance, voltage utilization, and system reliability metrics
                   </li>
                   <li>
-                    Led early-stage project design efforts by conducting client site walkdowns and developing project proposals, including scope of work, material estimates, and labor cost breakdowns
+                    Processed and validated large-scale utility datasets to support infrastructure planning and operational decision-making
                   </li>
                   <li>
-                    	Collaborated with engineering, field crews, and stakeholders to validate asset data, align upgrade priorities, and ensure feasibility of proposed projects
+                    Analyzed equipment performance trends to identify risks impacting grid stability and service reliability
+                  </li>
+                  <li>
+                    Collaborated with cross-functional teams to integrate field and system data into centralized datasets for operational visibility
+                  </li>
+                  <li>
+                    Developed data-driven insights to support proactive maintenance and system optimization
                   </li>
                   
                 </ul>
@@ -296,20 +302,16 @@ export default function About() {
                 </div>
                 <ul className="list-disc ml-8">
                   <li>
-                    Engineered potential and current transformer replacements
-                    for NYPA&apos;s 69/115kV substations
+                    Analyzed load and generation data within NYISO market framework to support settlement validation and ensure accurate energy accounting
                   </li>
                   <li>
-                    Drafted 1 & 3-line technical drawings and schematics using
-                    AutoCAD
+                    Collaborated with internal teams and market operators to reconcile discrepancies in load profiles and metering data, improving data integrity for market participation
                   </li>
                   <li>
-                    Designed & supported meter installation and instrument
-                    upgrades for NYPA&apos;s facilities and municipalities
+                    Evaluated metering systems supporting real-time and historical load data used in forecasting and scheduling processes
                   </li>
                   <li>
-                    Calibrated & tested revenue/generator control meters for
-                    NYPA&apos;s substations to meet ANSI & IEEE standards
+                    Supported data validation workflows across MV90 and SCADA systems, ensuring reliability of inputs used in energy market operations
                   </li>
                 </ul>
               </div>
